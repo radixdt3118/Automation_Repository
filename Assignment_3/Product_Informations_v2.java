@@ -10,64 +10,50 @@ Scenario: While iterating through the products, if we encounter a product with a
 
 Continue statement:
 
-Scenario: If a product's quantity is 0 (out of stock), we skip printing its details and move to the next product.
+Scenario: If a product's quantity is 0 (out of stock), we skip Quantity field for that particular product and move to the next product.
 
 
 Return statement:
 
-Scenario: We create a method to find a product by its size. If found, we immediately return the product details. If not found, we return null after checking all products.
+Scenario: We create a method to find a product by its size. If found, we return True/False.
  */
 
 public class Product_Informations_v2 {
-	
-	public static class Product{
-		String name;
-		String size;
-		int price;
-		int quantity;
-		
-		public void product(String name , String size , int price , int quantity) {
-			this.name = name;
-			this.size = size;
-			this.price = price;
-			this.quantity = quantity;
-		}
-		
-	}
 
-	
 	public static void main(String[] args) {
-
-		ArrayList<Product> product_list = new ArrayList<Product>();
 		
-		Product p1 = new Product();
+		
+		String[][] products = new String[5][4];
+		
 		Scanner sc = new Scanner(System.in);
 		
-		for(int i=0;i<5;i++) {
-			System.out.println("Enter product name , size , quantity , price");
-			p1.name = sc.next();
-			p1.size = sc.next();
-			p1.quantity = sc.nextInt();
-			p1.price = sc.nextInt();
+		int num = 1;
+		for(int i=0;i<=4;i++) {
+			System.out.println("Enter Product name , Product price , Product quantity  & Product size (Press enter to enter each)");
 			
-			if(p1.quantity<=0) {
-				System.out.println("Quantity can't be less then or equal to zero\nSkipping this record");
-				continue;
+			for(int j=0;j<=3;j++) {
+				String temp = sc.nextLine();
+				
+				//Used continue statement to skip quantity field when it's entered as zero
+				if(j==2 && Integer.parseInt(temp)==0) {
+					System.out.println("Quantity can't be zero at this moment\nSkipping Quantity field here");
+					continue;
+				}
+				products[i][j] = temp;
 			}
-			if(p1.price<=0) {
-				System.out.println("Product price can't be negative");
+			
+			//Used break statement when price is entered as ZERO
+			if(Integer.parseInt(products[i][1])==0) {
+				System.out.println("Loop break");
 				break;
 			}
-			
-			product_list.add(p1);
+		}
+				
+		
+		for(int i=0;i<products.length;i++) {
+			System.out.println(Arrays.deepToString(products[i]));
 		}
 		
-		for(int i=0;i<5;i++) {
-			System.out.println(product_list.get(i).name);
-		}
-		}
-		
-
 	}
 	
-
+}

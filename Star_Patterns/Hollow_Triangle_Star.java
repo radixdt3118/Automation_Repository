@@ -11,7 +11,7 @@ public class Hollow_Triangle_Star {
 				System.out.print(" ");
 			}
 			for(int k=1;k<=i;k++) {
-				if (k>1 && k<i && i!=7) {
+				if (k>1 && k<i && i!=n) {
 					System.out.print("  ");
 				}
 				else {

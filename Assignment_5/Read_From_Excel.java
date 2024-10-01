@@ -24,7 +24,7 @@ public class Read_From_Excel {
 			Row row = sheet.getRow(r);
 			for(int c=0;c<=column_length;c++) {
 				Cell cell = row.getCell(c);
-				System.out.print(cell.toString() + "  \t  ");
+				System.out.print(cell + "  \t  ");
 			}
 			System.out.println();			
 		}

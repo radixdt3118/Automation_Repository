@@ -24,26 +24,21 @@ sales_agent=//select[@id='sales_agent_id']
 add_as_front_customer=//input[@id='is_customer' and @type='checkbox']
 
 #Settings
-settings_radio=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
 markup_type=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
 markup_master=//select[@id='corporate_markup_id']
 flat_markup=//input[@id='flat_markup']
-pay_on_account_disable=
-pay_on_account_store_wise=
-pay_on_account_customer_wise=
-pay_on_limit=
+pay_on_account=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
+pay_on_limit=//input[@id='pay_limit']
 open_b2b_store=//input[@id='corporate_type' and @type='checkbox']
 department=//input[@id='department_module_enable' and @type='checkbox']
 fix_billing_address=//input[@id='fix_billing_address' and @type='checkbox']
 fix_shipping_address=//input[@id='fix_shipping_address' and @type='checkbox']
-order_approval_no=
-order_approval_yes=
-order_approval_partial_order=
-show_price_to_customer=
+order_approval=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
+show_price_to_customer=//input[@id='price_visible' and @type='checkbox']
 quick_checkout=//input[@id='corporate_setting_quick_checkout' and @type='checkbox']
-store=
+store_fields=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
 allow_tax_exemption=//input[@id='tax_exempt' and @type='checkbox']
-manage_invoice=
+manage_invoice=//input[@id='radio_0' and @type='radio']//following::span[contains(text(),'%s')]
 manage_email_notification_store_users=//input[@id='checkbox_1']
 manage_email_notification_store_admins=//input[@id='checkbox_2']
 allow_partial_payment=//input[@id='allow_partial_payment' and @type='checkbox']

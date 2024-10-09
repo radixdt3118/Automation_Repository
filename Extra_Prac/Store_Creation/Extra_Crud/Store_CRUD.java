@@ -50,28 +50,32 @@ public class Store_CRUD extends Get_From_Properties{
 			driver.findElement(By.xpath(getXPath("save_and_continue", properties))).click();
 			
 			//Adding store details
-			String[] fields = {"store_name","email","url_type","subdomain_name","main_store_url","username","password","phone_number","sales_agent","add_as_front_customer","markup_type", "markup_master" , "flat_markup" ,  "pay_on_limit","open_b2b_store","epartment","fix_billing_address","fix_shipping_address","quick_checkout","allow_tax_exemption","allow_partial_payment","notify"};
+			String[] fields = {"store_name","email","url_type","subdomain_name","main_store_url","username","password","phone_number","sales_agent","add_as_front_customer","markup_type", "markup_master" , "flat_markup" ,  "pay_on_account","pay_on_limit","open_b2b_store","department","fix_billing_address","fix_shipping_address","order_approval","show_price_to_customer","quick_checkout","store_fields","allow_tax_exemption","manage_invoice","allow_partial_payment","notify"};
+			
 			
 			for(int i=0;i<fields.length;i++) {				
 				try {
 					WebElement element=null;
-					element = driver.findElement(By.xpath(getXPath(fields[i], properties)));
-					
+					if(fields[i].equalsIgnoreCase("url_type") || fields[i].equalsIgnoreCase("markup_type")){
+						writer.write(fields[i]+"\n");
+						String xpath_new = String.format(getXPath(fields[i], properties),getData("Store_Details", row_num, fields[i], excel));						
+						element = driver.findElement(By.xpath(xpath_new));
+					}else {
+						 element = driver.findElement(By.xpath(getXPath(fields[i], properties)));
+					}
 					if(element.getTagName().contains("input")) {
 						
 						if(element.toString().contains("checkbox")) {
 							if(getData("Store_Details", row_num, fields[i], excel).equals("1.0")) {
 								element.click();
 							}
-						}else if(element.toString().contains("radio") ) {
-							writer.write(fields[i]);
-							String xpath_new = String.format(getXPath(fields[i], properties),getData("Store_Details", row_num, fields[i], excel));						
-							element = driver.findElement(By.xpath(xpath_new));
-							element.click();
 						}
 						else {
 							element.sendKeys(getData("Store_Details", row_num, fields[i], excel));
 						}
+					}else if(element.toString().contains("radio") ) {
+						writer.write(fields[i]);
+						element.click();
 					}
 					else if(element.getTagName().equalsIgnoreCase("select")) {
 						Select element_s = new Select(element);

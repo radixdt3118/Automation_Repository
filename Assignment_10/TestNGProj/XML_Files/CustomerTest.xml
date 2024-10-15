@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="suite-1">
+	<test name="test-customer-add">
+		<classes>
+			<class name="Assignments_Packages.TestCustomerAdd">
+				<methods>
+					<include name="customerAdd_1"></include>
+					<include name="customerAdd_2"></include>
+					<include name="customerAdd_3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

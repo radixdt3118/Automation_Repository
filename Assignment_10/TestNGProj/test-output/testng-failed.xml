@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite-1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="payment_terms_test(failed)">
+    <classes>
+      <class name="Assignments_Packages.TestPaymentTermsCRUD">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="deletePaymentTerm"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Assignments_Packages.TestPaymentTermsCRUD -->
+    </classes>
+  </test> <!-- payment_terms_test(failed) -->
+</suite> <!-- Failed suite [suite-1] -->

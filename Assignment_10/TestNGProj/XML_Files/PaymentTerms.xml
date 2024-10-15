@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="suite-1">
+	<test name="payment_terms_test">
+		<classes>
+			<class name="Assignments_Packages.TestPaymentTermsCRUD">
+				<methods>
+				<include name="addPaymentTerm"></include>
+				<include name="EditPaymentTerm"></include>
+				<include name="viewPaymentTerm"></include>
+				<include name="deletePaymentTerm"></include>
+				</methods>
+			</class>		
+		</classes>
+	</test>
+</suite>

@@ -18,7 +18,7 @@ public class Loop_to_Interact_with_Element extends Get_From_Properties {
 	
 	public static String[] fields = { "usertype", "sales_agent", "firstname", "lastname", "email", "secondaryemail", "password",
 			"force_reset", "phonenumber", "company", "usergroup", "address1", "address2", "country", "state",
-			"city", "zipcode", "notify", "allow_tax_exemption", "payment_due_days", "pay_on_account",
+			"city", "zipcode", "notify", "allow_tax_exemption", "payment_due_days", "pay_on_account","pay_on_limit",
 			"allow_partial_payment", "payment_term"};
 
 	public static void beforeAdding() throws IOException {
@@ -26,12 +26,11 @@ public class Loop_to_Interact_with_Element extends Get_From_Properties {
 		options.setAcceptInsecureCerts(true);
 		driver = new FirefoxDriver(options);
 		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 		driver.findElement(By.xpath(getXPath("username", properties))).sendKeys("admin");
 		driver.findElement(By.xpath(getXPath("password", properties))).sendKeys("Admin095");
 		driver.findElement(By.xpath(getXPath("login", properties))).click();
-		driver.navigate().to(url + "/user_listing.php");
+		driver.navigate().to(url + "user_listing.php");
 	}
 	
 	public static void beforeMethod() {

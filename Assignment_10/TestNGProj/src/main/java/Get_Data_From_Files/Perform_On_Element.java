@@ -7,29 +7,40 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Perform_On_Element {
 
-	public static void interactWith(String xpath, String data, WebDriver driver) {
+	public static void interactWith(String xpath, String data, WebDriver driver) throws Exception {
+		WebElement element = driver.findElement(By.xpath(xpath));
+		
 		try {
-			WebElement element = driver.findElement(By.xpath(xpath));
-			if (element.getTagName().equals("input")) {
-				if (element.toString().contains("checkbox")) {
-					if (data.equals("active")) {
+			switch (element.getTagName()) {
+				case "input":
+					if (element.toString().contains("checkbox") && data.equals("active")) {
+							element.click();
+					} else {
+						element.sendKeys(data);
+					}
+					break;
+					
+				case "select":
+					Select dropdown = new Select(element);
+					dropdown.selectByVisibleText(data);
+					break;
+					
+				case "button":
+					if(element.toString().contains("@data-id")) {
+						element.click();
+						String xpath_new = String.format("//div[@class='dropdown-menu show']//child::*[contains(text(),'%s')]",data);
+						driver.findElement(By.xpath(xpath_new)).click();
+					}else {
 						element.click();
 					}
-				} else {
-					element.sendKeys(data);
-				}
-			} else if (element.getTagName().equals("select")) {
-				Select dropdown = new Select(element);
-				dropdown.selectByVisibleText(data);//
-			} else if (element.getTagName().equals("button")) {
-				element.click();
-				String xpath_new = String.format("//div[@class='dropdown-menu show']//child::*[contains(text(),'%s')]",data);
-				driver.findElement(By.xpath(xpath_new)).click();
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+					break;
 
+				default:
+					throw new Exception("Element not interactable");
+				}
+		} catch (Exception e) {
+			//do nothing
+		}
 	}
 
 	public static void main(String[] args) {

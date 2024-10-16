@@ -12,7 +12,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import Custom_Wait.Custom_wait;
+import Custom_Find.Custom_Find;
 import Get_Data_From_Files.Get_From_Properties;
 
 public class CRUD_Payment_Terms extends Get_From_Properties {
@@ -68,10 +68,10 @@ public class CRUD_Payment_Terms extends Get_From_Properties {
 
 	// edit payment term
 	public static void editPaymentTerm() throws Exception {
-		Custom_wait obj = new Custom_wait();
+		Custom_Find obj = new Custom_Find();
 		System.out.println("Calling edit payment terms");
 		String new_xpath = String.format(getXPath("edit_term", properties), term_title_value);
-		WebElement edit_button = Custom_wait.customFindElement(new_xpath, driver);
+		WebElement edit_button = Custom_Find.customFindElement(new_xpath, driver);
 		edit_button.click();
 		
 		WebElement term_title = driver.findElement(By.xpath(getXPath("term_title", properties)));
@@ -85,7 +85,7 @@ public class CRUD_Payment_Terms extends Get_From_Properties {
 	// view payment term
 	public static void viewPaymentTerm() throws Exception {
 		String new_xpath = String.format(getXPath("edit_term", properties), term_title_value);
-		WebElement edit_button = Custom_wait.customFindElement(new_xpath, driver);
+		WebElement edit_button = Custom_Find.customFindElement(new_xpath, driver);
 		edit_button.click();
 //		driver.findElement(By.xpath(new_xpath)).click();
 		driver.findElement(By.xpath(getXPath("back_button", properties))).click();
@@ -94,11 +94,11 @@ public class CRUD_Payment_Terms extends Get_From_Properties {
 	// delete payment term
 	public static void deletePaymentTerm() throws Exception {
 		String new_xpath = String.format(getXPath("delete_term", properties), term_title_value);
-		WebElement delete_button = Custom_wait.customFindElement(new_xpath, driver);
+		WebElement delete_button = Custom_Find.customFindElement(new_xpath, driver);
 		delete_button.click();
 //		driver.findElement(By.xpath(new_xpath)).click();
 //		driver.findElement(By.xpath(getXPath("confirm_delete", properties))).click();
-		WebElement confirm_delete= Custom_wait.customFindElement(getXPath("confirm_delete", properties), driver);
+		WebElement confirm_delete= Custom_Find.customFindElement(getXPath("confirm_delete", properties), driver);
 		confirm_delete.click();
 	}
 }

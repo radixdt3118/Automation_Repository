@@ -1,11 +1,11 @@
-package Custom_Wait;
+package Custom_Find;
 
 import java.util.concurrent.TimeoutException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Custom_wait {
+public class Custom_Find {
 
 	public static WebElement customFindElement(String xpath, WebDriver driver) throws Exception {
 

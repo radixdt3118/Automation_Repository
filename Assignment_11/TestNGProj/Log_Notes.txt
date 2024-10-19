@@ -1,0 +1,8 @@
+nable to locate element: //div[@class='ml-auto m-3']//child::input[@id='top_search']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-40-generic', java.version: '22.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [25550a59-b013-4d91-9381-a6ffcf112885, findElement {using=xpath, value=//div[@class='ml-auto m-3']//child::input[@id='top_search']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240916093609, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 6.8.0-40-generic, moz:processID: 13062, moz:profile: /tmp/rust_mozprofileVdlkR4, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Ubuntu; L...}
+Session ID: 25550a59-b013-4d91-9381-a6ffcf112885

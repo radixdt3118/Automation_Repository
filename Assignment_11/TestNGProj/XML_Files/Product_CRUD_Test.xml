@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Product suite">
+    <test name="ProductCRUDTest">
+    <groups> 
+   		<run></run>
+    </groups>
+    	<classes>
+            <class name="Assignments_Packages.Product_Test"/>
+        </classes>
+    </test>
+</suite>

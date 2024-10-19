@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-19T13:14:30 IST" name="Product suite" finished-at="2024-10-19T13:14:54 IST" duration-ms="23473">
+    <groups>
+      <group name="CRUD">
+        <method signature="Product_Test.createProduct()[pri:1, instance:Assignments_Packages.Product_Test@740cae06]" name="createProduct" class="Assignments_Packages.Product_Test"/>
+        <method signature="Product_Test.editProduct()[pri:2, instance:Assignments_Packages.Product_Test@740cae06]" name="editProduct" class="Assignments_Packages.Product_Test"/>
+        <method signature="Product_Test.viewProduct()[pri:3, instance:Assignments_Packages.Product_Test@740cae06]" name="viewProduct" class="Assignments_Packages.Product_Test"/>
+      </group> <!-- CRUD -->
+    </groups>
+    <test started-at="2024-10-19T13:14:30 IST" name="ProductCRUDTest" finished-at="2024-10-19T13:14:54 IST" duration-ms="23473">
+      <class name="Assignments_Packages.Product_Test">
+        <test-method is-config="true" signature="invokeAndNavigate()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:22 IST" name="invokeAndNavigate" finished-at="2024-10-19T13:14:30 IST" duration-ms="8167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeAndNavigate -->
+        <test-method is-config="true" signature="prefetchData()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:30 IST" name="prefetchData" finished-at="2024-10-19T13:14:31 IST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prefetchData -->
+        <test-method is-config="true" signature="redirectToListing()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:31 IST" name="redirectToListing" finished-at="2024-10-19T13:14:32 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToListing -->
+        <test-method signature="createProduct()[pri:1, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:32 IST" name="createProduct" finished-at="2024-10-19T13:14:39 IST" duration-ms="6647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct -->
+        <test-method is-config="true" signature="redirectToListing()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:39 IST" name="redirectToListing" finished-at="2024-10-19T13:14:39 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToListing -->
+        <test-method signature="editProduct()[pri:2, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:39 IST" name="editProduct" finished-at="2024-10-19T13:14:47 IST" duration-ms="7485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProduct -->
+        <test-method is-config="true" signature="redirectToListing()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:47 IST" name="redirectToListing" finished-at="2024-10-19T13:14:47 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToListing -->
+        <test-method signature="viewProduct()[pri:3, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:47 IST" name="viewProduct" finished-at="2024-10-19T13:14:50 IST" duration-ms="2921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProduct -->
+        <test-method is-config="true" signature="redirectToListing()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:50 IST" name="redirectToListing" finished-at="2024-10-19T13:14:51 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectToListing -->
+        <test-method signature="deleteProduct()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:51 IST" name="deleteProduct" depends-on-groups="CRUD" finished-at="2024-10-19T13:14:54 IST" duration-ms="2853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProduct -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Assignments_Packages.Product_Test@740cae06]" started-at="2024-10-19T13:14:54 IST" name="quitBrowser" finished-at="2024-10-19T13:14:55 IST" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- Assignments_Packages.Product_Test -->
+    </test> <!-- ProductCRUDTest -->
+  </suite> <!-- Product suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Product suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ProductCRUDTest(failed)">
+    <classes>
+      <class name="Assignments_Packages.Product_Test">
+        <methods>
+          <include name="prefetchData"/>
+          <include name="createProduct"/>
+          <include name="invokeAndNavigate"/>
+          <include name="quitBrowser"/>
+          <include name="editProduct"/>
+          <include name="viewProduct"/>
+          <include name="deleteProduct"/>
+        </methods>
+      </class> <!-- Assignments_Packages.Product_Test -->
+    </classes>
+  </test> <!-- ProductCRUDTest(failed) -->
+</suite> <!-- Failed suite [Product suite] -->

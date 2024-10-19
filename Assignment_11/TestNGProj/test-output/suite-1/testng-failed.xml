@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite-1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test-customer-add(failed)">
+    <classes>
+      <class name="Assignments_Packages.TestCustomerAdd">
+        <methods>
+          <include name="customerAdd_1"/>
+          <include name="customerAdd_3"/>
+          <include name="customerAdd_2"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- Assignments_Packages.TestCustomerAdd -->
+    </classes>
+  </test> <!-- test-customer-add(failed) -->
+</suite> <!-- Failed suite [suite-1] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Suite-1">
+    <parameter name="properties" value="src/test/resources/xpaths_workflow_roles.properties"></parameter>
+    <parameter name="Excel" value="TestData/workflowRoles.xlsx"></parameter>
+    <parameter name="Sheet1" value="Add"></parameter>
+    <parameter name="Sheet2" value="Edit"></parameter>
+    
+    <test name="WorkFlow Test-1">
+    <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="Assignments_Packages.WorkFlow_Roles_Test"/>
+        </classes>
+    </test>
+    <test name="WorkFlow Test-2">
+    <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="Assignments_Packages.WorkFlow_Roles_Test"/>
+        </classes>
+    </test>	
+    <test name="WorkFlow Test-3">
+    <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="Assignments_Packages.WorkFlow_Roles_Test"/>
+        </classes>
+    </test>			
+</suite>

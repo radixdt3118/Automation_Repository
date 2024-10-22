@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-22T17:50:14 IST" name="Suite-1" finished-at="2024-10-22T17:51:08 IST" duration-ms="54488">
+    <groups>
+    </groups>
+    <test started-at="2024-10-22T17:50:14 IST" name="WorkFlow Test-1" finished-at="2024-10-22T17:50:28 IST" duration-ms="14558">
+      <class name="Assignments_Packages.WorkFlow_Roles_Test">
+        <test-method is-config="true" signature="setupCase(java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:14 IST" name="setupCase" finished-at="2024-10-22T17:50:18 IST" duration-ms="4144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCase -->
+        <test-method is-config="true" signature="navigateToPage(java.lang.String,java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:18 IST" name="navigateToPage" finished-at="2024-10-22T17:50:19 IST" duration-ms="1253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/xpaths_workflow_roles.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestData/workflowRoles.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="addRole(java.lang.String)[pri:1, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:19 IST" name="addRole" finished-at="2024-10-22T17:50:23 IST" duration-ms="3933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRole -->
+        <test-method signature="editRole(java.lang.String)[pri:2, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:23 IST" name="editRole" finished-at="2024-10-22T17:50:27 IST" duration-ms="3617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editRole -->
+        <test-method signature="viewRole(java.lang.String)[pri:3, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:27 IST" name="viewRole" finished-at="2024-10-22T17:50:27 IST" duration-ms="843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewRole -->
+        <test-method signature="deleteRole(java.lang.String)[pri:4, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:27 IST" name="deleteRole" finished-at="2024-10-22T17:50:28 IST" duration-ms="609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRole -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@63376bed]" started-at="2024-10-22T17:50:28 IST" name="quitDriver" finished-at="2024-10-22T17:50:28 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Assignments_Packages.WorkFlow_Roles_Test -->
+    </test> <!-- WorkFlow Test-1 -->
+    <test started-at="2024-10-22T17:50:28 IST" name="WorkFlow Test-2" finished-at="2024-10-22T17:50:55 IST" duration-ms="27036">
+      <class name="Assignments_Packages.WorkFlow_Roles_Test">
+        <test-method is-config="true" signature="setupCase(java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:28 IST" name="setupCase" finished-at="2024-10-22T17:50:34 IST" duration-ms="5841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCase -->
+        <test-method is-config="true" signature="navigateToPage(java.lang.String,java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:34 IST" name="navigateToPage" finished-at="2024-10-22T17:50:36 IST" duration-ms="2233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/xpaths_workflow_roles.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestData/workflowRoles.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="addRole(java.lang.String)[pri:1, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:36 IST" name="addRole" finished-at="2024-10-22T17:50:44 IST" duration-ms="7526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRole -->
+        <test-method signature="editRole(java.lang.String)[pri:2, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:44 IST" name="editRole" finished-at="2024-10-22T17:50:52 IST" duration-ms="8250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editRole -->
+        <test-method signature="viewRole(java.lang.String)[pri:3, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:52 IST" name="viewRole" finished-at="2024-10-22T17:50:53 IST" duration-ms="1457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewRole -->
+        <test-method signature="deleteRole(java.lang.String)[pri:4, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:53 IST" name="deleteRole" finished-at="2024-10-22T17:50:54 IST" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRole -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@7bba5817]" started-at="2024-10-22T17:50:54 IST" name="quitDriver" finished-at="2024-10-22T17:50:55 IST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Assignments_Packages.WorkFlow_Roles_Test -->
+    </test> <!-- WorkFlow Test-2 -->
+    <test started-at="2024-10-22T17:50:55 IST" name="WorkFlow Test-3" finished-at="2024-10-22T17:51:08 IST" duration-ms="12881">
+      <class name="Assignments_Packages.WorkFlow_Roles_Test">
+        <test-method is-config="true" signature="setupCase(java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:50:55 IST" name="setupCase" finished-at="2024-10-22T17:50:57 IST" duration-ms="2094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCase -->
+        <test-method is-config="true" signature="navigateToPage(java.lang.String,java.lang.String)[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:50:57 IST" name="navigateToPage" finished-at="2024-10-22T17:50:59 IST" duration-ms="2062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/xpaths_workflow_roles.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestData/workflowRoles.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToPage -->
+        <test-method signature="addRole(java.lang.String)[pri:1, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:50:59 IST" name="addRole" finished-at="2024-10-22T17:51:02 IST" duration-ms="3123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRole -->
+        <test-method signature="editRole(java.lang.String)[pri:2, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:51:02 IST" name="editRole" finished-at="2024-10-22T17:51:06 IST" duration-ms="3785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editRole -->
+        <test-method signature="viewRole(java.lang.String)[pri:3, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:51:06 IST" name="viewRole" finished-at="2024-10-22T17:51:07 IST" duration-ms="998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewRole -->
+        <test-method signature="deleteRole(java.lang.String)[pri:4, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:51:07 IST" name="deleteRole" finished-at="2024-10-22T17:51:08 IST" duration-ms="662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRole -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Assignments_Packages.WorkFlow_Roles_Test@17f9d882]" started-at="2024-10-22T17:51:08 IST" name="quitDriver" finished-at="2024-10-22T17:51:08 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Assignments_Packages.WorkFlow_Roles_Test -->
+    </test> <!-- WorkFlow Test-3 -->
+  </suite> <!-- Suite-1 -->
+</testng-results>

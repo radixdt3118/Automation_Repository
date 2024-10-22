@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite-1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="WorkFlow Test-1(failed)">
+    <parameter name="Excel" value="TestData/workflowRoles.xlsx"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="Sheet2" value="Edit"/>
+    <parameter name="Sheet1" value="Add"/>
+    <parameter name="properties" value="src/test/resources/xpaths_workflow_roles.properties"/>
+    <classes>
+      <class name="Assignments_Packages.WorkFlow_Roles_Test">
+        <methods>
+          <include name="setupCase"/>
+          <include name="quitDriver"/>
+          <include name="deleteRole" invocation-numbers="0"/>
+          <include name="navigateToPage"/>
+        </methods>
+      </class> <!-- Assignments_Packages.WorkFlow_Roles_Test -->
+    </classes>
+  </test> <!-- WorkFlow Test-1(failed) -->
+</suite> <!-- Failed suite [Suite-1] -->
